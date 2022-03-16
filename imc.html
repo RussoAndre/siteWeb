@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<title>Calcula IMC - Emagrecimento Saudável</title>
+
+	<link rel="stylesheet" href="reset.css">
+	<link rel="stylesheet" href="style.css">
+	<script src="scripts.js"></script>
+
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+</head>
+
+<body>
+	<header>
+		<div class="caixa">
+			<h1><img src="logo.png" alt="logo Emagrecimento Saudável    "></h1>
+
+			<nav>
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="produtos.html">Pacotes</a></li>
+					<li><a href="imc.html">IMC</a></li>
+					<li><a href="cadastro.html">Cadastro</a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+
+	<main>
+
+
+		<article>
+
+			<div class="explicaImc">
+				<h1>
+					O que é o IMC? <br><br>
+				</h1>
+				<p>
+					IMC é uma sigla que tem como significado Índice de Massa Corporal. <br> O Índice de Massa Corporal
+					mede qual é o nível de gordura no organismo <br> de uma pessoa.
+				</p>
+			</div>
+
+			<div class="pedePeso">
+				<h1>Digite o seu peso e a sua altura para calcularmos o seu IMC</h1>
+			</div>
+
+			<div class="inputs-content">
+				<div class="content-input">
+					<input required type="text" id="weight" placeholder="Peso">
+				</div>
+
+				<div class="content-input">
+					<input required type="text" id="height" placeholder="Altura">
+				</div>
+			</div>
+
+			<button onclick="CalcIMC();">Calcular</button>
+		</article>
+
+
+
+		<table>
+			<thead>
+				<tr>
+					<th>IMC</th>
+					<th>Classificação</th>
+					<th>Obesidade(Grau)</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>MENOR QUE 18,5</td>
+					<td>Magreza</td>
+					<td>0</td>
+				</tr>
+
+				<tr>
+					<td>Entre 18,5 e 24,9</td>
+					<td>Normal</td>
+					<td>0</td>
+				</tr>
+
+				<tr>
+					<td>ENTRE 25,0 E 29,9</td>
+					<td>SobrePeso</td>
+					<td>I</td>
+				</tr>
+
+				<tr>
+					<td>ENTRE 30,0 E 39,9</td>
+					<td>Obesidade</td>
+					<td>II</td>
+				</tr>
+				<tr>
+					<td>Maior que 40,0</td>
+					<td>Obesidade grave</td>
+					<td>II</td>
+				</tr>
+
+			</tbody>
+
+
+		</table>
+
+
+
+
+
+
+
+	</main>
+
+	<footer>
+		<img src="logo.png" alt="logo Emagrecimento Saudável">
+		<p class="copyright">&copy; Copyright Emagrecimento Saudável - 2022</p>
+	</footer>
+</body>
+</body>
+
+</html>
