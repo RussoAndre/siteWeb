@@ -7,7 +7,7 @@
 
 	<link rel="stylesheet" href="reset.css">
 	<link rel="stylesheet" href="style.css">
-	<script src="scripts.js"></script>
+	<script src="script.js"></script>
 
 	<link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
 </head>
@@ -15,7 +15,7 @@
 <body>
 	<header>
 		<div class="caixa">
-			<h1><img src="logo.png" alt="logo Emagrecimento Saudável    "></h1>
+			<a href="index.html"><img src="logo.png" alt="logo Emagrecimento Saudável"></a>
 
 			<nav>
 				<ul>
@@ -47,14 +47,14 @@
 				<h1>Digite o seu peso e a sua altura para calcularmos o seu IMC</h1>
 			</div>
 
-			<div class="inputs-content">
-				<div class="content-input">
-					<input required type="text" id="weight" placeholder="Peso">
-				</div>
 
-				<div class="content-input">
-					<input required type="text" id="height" placeholder="Altura">
-				</div>
+
+			<input required type="text" id="peso" placeholder="Peso">
+
+
+
+			<input required type="text" id="altura" placeholder="Altura">
+
 			</div>
 
 			<button onclick="CalcIMC();">Calcular</button>
@@ -62,7 +62,7 @@
 
 
 
-		<table>
+		<table class="center">
 			<thead>
 				<tr>
 					<th>IMC</th>
